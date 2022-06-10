@@ -2,12 +2,12 @@ import React from 'react'
 
 const Jumbotron = (props) => {
     return(
-        <section class="jumbotron">
-        <div class="container">
-          <h1 class="jumbotron-heading float-left">Album example</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+        <section className="jumbotron">
+        <div className="container">
+          <h1 className="jumbotron-heading float-left">{props.header}</h1>
+          <p className="lead text-muted">{props.jumbotrontext}</p>
           <p>
-            <a href="#" class="btn btn-primary float-left">Main call to action</a>
+            <a href={props.btnurl} className="btn btn-primary float-left">{props.btntitle}</a>
           </p>
         </div>
       </section>
